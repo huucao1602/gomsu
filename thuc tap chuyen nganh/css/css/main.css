@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    padding: 12px 50px;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.logo > img {
+    height: 110px;
+    width: 120px;
+}
+
+.menu {
+    flex: 2;
+    display: flex;
+}
+
+.menu > li {
+    padding: 0 12px;
+    color: #ac1313;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.other {
+    flex: 1;
+    display: flex;
+}
+
+.other > li {
+    padding: 0 12px;
+}
+
+.other > li:first-child {
+    position: relative;
+}
+
+.other > li:first-child input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.other > li:first-child i {
+    position: absolute;
+    right: 10px;
+}
+.other > li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #ccc;
+    position: absolute;
+    right: 0;
+    top : 50%;
+    transform: translateY(-50%);
+
+}
+
+/* Updated CSS for the aspect-ratio-169 container */
+/* Your existing CSS... */
+
+/* Updated CSS for the aspect-ratio-169 container */
+.aspect-ratio-169 {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+}
+.Slider{
+    padding-bottom: 30px;
+    border-bottom: 2px solid;
+}
+.aspect-ratio-169 .slider-inner {
+    display: flex;
+    transition: transform 1s; /* Add transition for smooth sliding */
+}
+
+.aspect-ratio-169 img {
+    flex: 0 0 100%; /* Each image occupies 100% width */
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Center the image in the container */
+    width: 70%; /* Set a fixed width for the images */
+}
+banner {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .slide-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+/* Add active class for the visible image */
+.aspect-ratio-169 img.active {
+    opacity: 1;
+}
+.dot-container{
+    position:absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.dot{
+    height: 16px;
+    width: 16px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.dot.active {
+    background-color: #333;
+
+}
+#sanpham{
+    padding-top: 116px;
+    padding-bottom: 0px;
+    padding-left: 134px;
+    padding-right: 134px;
+}
+#sanpham h2{
+    text-align: center;
+    margin-bottom:78px ;
+    font-size: 32px;
+    color: #626a67;
+}
+#binh {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#binh .item {
+    width: 290px;
+    height: 374px;
+    background: #3b3333;
+    border-radius:10px;
+    margin-bottom: 50px;
+}
+#binh .item img{
+    display: block;
+    margin: 0px auto;
+    margin-top:1px;
+    width: 283px;
+    height: 268px;
+}
+#binh .item .name{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 21px;
+
+}
+#binh .item .desc{
+    text-align: center;
+    color: #626a67;
+
+}
+#binh .item .price{
+    text-align: center;
+    color: #f42424;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+/*-------------app------------------*/
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 46px 0 50px 0;
+    color: #1f1515;
+}
+.app-google{
+    margin: 50px;
+  
+}
+.app-google img {
+    height: 50px;
+    cursor: pointer;
+}
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+.app-container input {
+    margin-top: 50px;
+    border: none;
+   border-bottom: 1px solid #000;
+   padding-bottom: 20px;
+   width: 400px;
+   text-align: center;
+   outline: none;
+}
+/*-------------footer------------------*/
+foote{
+    text-align: center;
+}
+.footer-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+
+}
+.footer-top li {
+    padding: 0 12px;
+    position: relative;
+}
+.footer-top li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #ccc;
+    position: absolute;
+    right: 0;
+    top : 50%;
+    transform: translateY(-50%);
+}
+.footer-top li:first-child a{
+    margin-right: 12px;
+    color:#333
+
+}
+.footer-center{
+    text-align: center;
+}
+.footer-bottom{
+    text-align: center;
+    margin: 20px;
+}
+/*-------------------- sanpham--------------*/
+/* Đảm bảo rằng các div có class "row" được hiển thị theo kiểu flex và tự xuống dòng khi không đủ chỗ */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.sanpham {
+    padding: 28px 0 0;
+}
+
+.sanpham-top {
+    margin-bottom: -21px;
+}
+
+.sanpham-top p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 12px;
+}
+.sanpham-top.row p{
+    padding-left: 65px;
+}
+
+.sanpham-left {
+    width: 17%;
+}
+
+.sanpham-left a {
+    font-size: 20px;
+    color: #000;
+}
+
+.sanpham-right {
+    width: 80%;
+}
+
+.sanpham-right-top-item:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sanpham-right-content-item {
+    width: calc(25% - 12px);
+    text-align: center;
+    padding: 12px 0;
+}
+
+/* Đảm bảo rằng các button và select không tràn ra ngoài phạm vi cha */
+.sanpham-right-top-item button{
+    width: 113%;
+    padding: 10px 55px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.sanpham-right-top-item select {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Tùy chỉnh margin-top cho .sanpham-right-content */
+.sanpham-right-content {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+/* Điều chỉnh font size, font family, margin top và màu chữ cho tiêu đề h1 trong .sanpham-right-content */
+.sanpham-right-content-item h1 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 12px;
+    color: #333;
+}
+.sanpham-right-content-item img {
+    width: 100%;
+}
+.sanpham-right-content-item p{
+    font-size: 14px;
+}
+.sanpham-right-bottom{
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 100%;
+}
+.sanpham-right-bottom p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.sanpham-left ul{
+    padding: 27%;
+    padding-left: 25%
+}
+.sanpham-left ul li {
+    padding: 12px 0 ;
+    padding-left: 10px;
+}
+.sanpham-left ul li > a{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sanpham-left-li ul {
+    display: none;
+}
+.sanpham-left-li.block ul{
+    display: block;
+}
+/*------------- xemhang---------------*/
+.sanpham{
+    padding: 100px 0;
+}
+.sanpham-top{
+    margin-bottom: 30px;
+}
+.sanpham-top p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 12px;
+}
+.xemhang-top.row p{
+    padding-left: 65px;
+}
+.xemhang-content-left{
+    width: 50%;
+}
+.xemhang-content-right{
+    width: 50%;
+}
+.xemhang-content-left-big-img{
+    width: 80%;
+   padding-right: 20px;
+}
+.xemhang-content-left-big-img img{
+    width: 100%;
+}
+.xemhang-content-left-small-img{
+    width: 20%;
+    cursor: pointer;
+}
+.xemhang-content-left-small-img img{
+    width: 100%;
+}
+.xemhang-content-right{
+    width: 50%;
+    padding-left: 20px;
+}
+.xemhang-content-right-xemhang-name h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.xemhang-content-right-xemhang-name p {
+    color: #1f1515;
+    font-size: 12px;
+}
+.xemhang-content-right-xemhang-price{
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.xemhang-content-right-xemhang-color img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;  
+}
+.xemhang-content-right-xemhang-color-img{
+height: 40px;
+width: 40px;
+border: 1px solid #333;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 12px 0;
+}
+.quantity{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+.quantity input{
+    width: 35px;
+    padding-left: 3px;
+    
+}
+.xemhang-content-right-xemhang-button button{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.5s ease;
+}
+.xemhang-content-right-xemhang-button button:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid black;
+    cursor: pointer;    
+}
+.xemhang-content-right-xemhang-button button:first-child:hover{
+    background-color: #000;
+    color: #fff;
+}
+.xemhang-content-right-xemhang-button button:last-child{
+    border: 2px solid #BF8A49;
+    color: #BF8A49;
+    background-color:#fff;
+    cursor: pointer;
+}
+.xemhang-content-right-xemhang-icon{
+    display: flex;
+}
+.xemhang-content-right-xemhang-icon-item{
+    display: flex;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.xemhang-content-right-xemhang-icon-item i {
+    font-size: 12px;
+    margin-right: 6px;
+}
+.xemhang-content-right-bottom{
+    padding-top: 40px;
+    border-top: 1px solid #533131dd;
+    position: relative;
+    
+}
+.xemhang-content-right-bottom-top {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    top: -15px;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.xemhang-content-right-bottom-content-title {
+    border-bottom: 2px solid #472f2fdd;
+}
+.xemhang-content-right-bottom-content-title-item{
+   padding: 6px;
+   cursor: pointer;
+   margin-right: 6px; 
+}
+.xemhang-content-right-bottom-content  {
+    padding-top: 30px;
+}   
+.xemhang-content-right-bottom-content-title p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.xemhang-content-right-bottom-content-camket {
+    display: none;
+}
+.activeB{
+    display: none;
+}
+.inline {
+    margin-top: -16px;
+    z-index: -1;
+    border-bottom: 1px solid #c9baba ;
+}
